@@ -19,7 +19,8 @@ class Cloud: GameObject
     
     override func CheckBounds()
     {
-        if(position.y <= -756)
+        //Changing the position to X-Axis.
+        if(position.x <= -756)
         {
             Reset()
         }
@@ -27,15 +28,15 @@ class Cloud: GameObject
     
     override func Reset()
     {
-        dy = CGFloat((randomSource?.nextUniform())! * 5.0) + 5.0
-        dx = CGFloat((randomSource?.nextUniform())! * -4.0) + 2.0
+        dx = CGFloat((randomSource?.nextUniform())! * 5.0) + 5.0
+        dy = CGFloat((randomSource?.nextUniform())! * -4.0) + 2.0
         
         // get a pseudo-random number from -262 to 262 =
         let randomX:Int = (randomSource?.nextInt(upperBound: 524))! - 262
-        position.x = CGFloat(randomX)
+        position.y = CGFloat(randomX)
         
         let randomY:Int = (randomSource?.nextInt(upperBound: 10))! + 756
-        position.y = CGFloat(randomY)
+        position.x = CGFloat(randomY)
         
         isColliding = false
     }
@@ -56,7 +57,7 @@ class Cloud: GameObject
     
     func Move()
     {
-        position.y -= dy!
         position.x -= dx!
+        position.y -= dy!
     }
 }
