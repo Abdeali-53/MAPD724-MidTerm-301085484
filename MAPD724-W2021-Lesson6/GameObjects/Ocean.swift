@@ -19,7 +19,8 @@ class Ocean: GameObject
     
     override func CheckBounds()
     {
-        if(position.y <= -773)
+        //Changing the position to X-Axis.
+        if(position.x <= -773)
         {
             Reset()
         }
@@ -27,14 +28,16 @@ class Ocean: GameObject
     
     override func Reset()
     {
-        position.y = 773
+        //Change the reset position to X-Axis.
+        position.x = 773
     }
     
     // initialization
     override func Start()
     {
         zPosition = 0
-        dy = 5.0
+        //Change the speed of the ocean on X-Axis.
+        dx = 5.0
     }
     
     override func Update()
@@ -45,6 +48,7 @@ class Ocean: GameObject
     
     func Move()
     {
-        position.y -= dy!
+        //Moving the Ocean along X-Axis
+        position.x -= dx!
     }
 }
