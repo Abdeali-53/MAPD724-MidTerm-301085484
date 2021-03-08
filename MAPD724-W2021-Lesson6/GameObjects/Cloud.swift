@@ -1,3 +1,11 @@
+
+//  File name: Cloud.swift
+//  Author name: Abdeali Mody
+//  Student ID: 301085484
+//  Description: Did few changes related to the placement of Cloud.
+//  Copyright © 2021 Abdeali Mody. All rights reserved.
+
+
 import SpriteKit
 import GameplayKit
 

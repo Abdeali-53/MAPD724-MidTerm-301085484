@@ -1,3 +1,11 @@
+
+//  File name: Ocean.swift
+//  Author name: Abdeali Mody
+//  Student ID: 301085484
+//  Description: Reseted the Ocean for Lanscape Mode.
+//  Copyright © 2021 Abdeali Mody. All rights reserved.
+
+
 import SpriteKit
 import GameplayKit
 

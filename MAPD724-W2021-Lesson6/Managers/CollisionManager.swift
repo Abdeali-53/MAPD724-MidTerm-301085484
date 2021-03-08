@@ -1,3 +1,10 @@
+
+//  File name: CollisionManager.swift
+//  Author name: Abdeali Mody
+//  Student ID: 301085484
+//  Description: Show the Score calculation of game on every collision of plane with either Island or Cloud.
+//  Copyright © 2021 Abdeali Mody. All rights reserved.
+
 import SpriteKit
 import GameplayKit
 

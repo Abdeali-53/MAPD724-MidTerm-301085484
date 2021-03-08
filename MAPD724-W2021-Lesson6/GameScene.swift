@@ -1,3 +1,11 @@
+ 
+//  File name: Game Scene
+//  Author name: Abdeali Mody
+//  Student ID: 301085484
+//  Description: Game scene object coding, changing the cloud function.
+//  Copyright © 2021 Abdeali Mody. All rights reserved.
+
+ 
 import UIKit
 import AVFoundation
 import SpriteKit

@@ -1,3 +1,10 @@
+
+//  File name: Plane.swift
+//  Author name: Abdeali Mody
+//  Student ID: 301085484
+//  Description: Reseted the Plane for Lanscape Mode.Also Adjusting the Co-Ordinates .
+//  Copyright © 2021 Abdeali Mody. All rights reserved.
+
 import SpriteKit
 import GameplayKit
 
@@ -20,15 +27,15 @@ class Plane: GameObject
     override func CheckBounds()
     {
         // constrain on the left - left boundary
-        if(position.y <= -280)
+        if(position.y <= -310)
         {
-            position.y = -280
+            position.y = -310
         }
         
         // constrain on the right - right boundary
-        if(position.y >= 280)
+        if(position.y >= 310)
         {
-            position.y = 280
+            position.y = 310
         }
         
     }

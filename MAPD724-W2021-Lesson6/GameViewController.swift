@@ -1,3 +1,11 @@
+ 
+//  File name: GameViewController.swift
+//  Author name: Abdeali Mody
+//  Student ID: 301085484
+//  Description: Updating the game score.
+//  Copyright © 2021 Abdeali Mody. All rights reserved.
+
+
 import UIKit
 import SpriteKit
 import GameplayKit
