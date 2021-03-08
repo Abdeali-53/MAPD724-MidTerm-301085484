@@ -32,11 +32,11 @@ class Cloud: GameObject
         dy = CGFloat((randomSource?.nextUniform())! * -4.0) + 2.0
         
         // get a pseudo-random number from -262 to 262 =
-        let randomX:Int = (randomSource?.nextInt(upperBound: 524))! - 262
-        position.y = CGFloat(randomX)
+        let randomY:Int = (randomSource?.nextInt(upperBound: 524))! - 262
+        position.y = CGFloat(randomY)
         
-        let randomY:Int = (randomSource?.nextInt(upperBound: 10))! + 756
-        position.x = CGFloat(randomY)
+        let randomX:Int = (randomSource?.nextInt(upperBound: 10))! + 756
+        position.x = CGFloat(randomX)
         
         isColliding = false
     }

@@ -31,8 +31,8 @@ class Island: GameObject
         //Changing the position to X-Axis.
         position.x = 730
         // get a pseudo-random number from -313 to 313 =
-        let randomX:Int = (randomSource?.nextInt(upperBound: 626))! - 313
-        position.y = CGFloat(randomX)
+        let randomY:Int = (randomSource?.nextInt(upperBound: 626))! - 313
+        position.y = CGFloat(randomY)
         isColliding = false
     }
     

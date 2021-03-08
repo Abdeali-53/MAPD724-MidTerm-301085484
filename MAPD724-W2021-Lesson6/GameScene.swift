@@ -37,7 +37,7 @@ class GameScene: SKScene
         plane?.position = CGPoint(x: -495, y: 0)
         addChild(plane!)
         
-        // adding 2 clouds to the scene
+        // add 2 clouds to the scene
         for index in 0...1
         {
             let cloud: Cloud = Cloud()
@@ -56,7 +56,7 @@ class GameScene: SKScene
             {
                 let path: String = Bundle.main.path(forResource: sound, ofType: "mp3")!
                 let url: URL = URL(fileURLWithPath: path)
-	                let player: AVAudioPlayer = try AVAudioPlayer(contentsOf: url)
+                    let player: AVAudioPlayer = try AVAudioPlayer(contentsOf: url)
                 player.prepareToPlay()
             }
         } catch {
@@ -67,7 +67,7 @@ class GameScene: SKScene
     
     func touchDown(atPoint pos : CGPoint)
     {
-        plane?.TouchMove(newPos: CGPoint(x: -495, y: pos.y))
+        plane?.TouchMove(newPos: CGPoint(x: -495, y: pos.y ))
     }
     
     func touchMoved(toPoint pos : CGPoint)
@@ -78,7 +78,7 @@ class GameScene: SKScene
     
     func touchUp(atPoint pos : CGPoint)
     {
-        plane?.TouchMove(newPos: CGPoint(x: -495, y: pos.y))
+        plane?.TouchMove(newPos: CGPoint(x:  -495, y: pos.y))
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
